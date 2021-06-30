@@ -47,5 +47,10 @@ All MVPAs were conducted using R package [rMVPA](https://github.com/bbuchsbaum/r
 
 You can find the corresponding scripts in **RSA_related/** and **SDA_related/**.
 
+### Dynamic Causal Model Analysis
 
+To investgate the flow of hierarchical information within the MD system, we performed a dynamic causal model to compare two alternative theoretical models, **core-integration model and distal-integration model**. The constrution of two models could be found in our manuscript.
 
+We first construct a subject-level GLM using SPM. Then we extracted the time series in each VOI, including the dorsomedial prefrontal cortex, the bilateral premotor cortex and the superior parietal cortex. Two model were constructed and estimated in separate in subject-level. A bayesian model comparison (BMS) was conducted to select the wining model between them. Finally, we extracted the modulation effect from the B-matix in the wining model. 
+
+The DCM pipeline was done using [SPM12](https://www.fil.ion.ucl.ac.uk/spm/)
